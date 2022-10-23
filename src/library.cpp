@@ -2,9 +2,9 @@
 
 #include <iostream>
 
-namespace td {
-void hello()
+namespace hello_world {
+void HelloWorld::print_hello() const
 {
-    std::cout << "Hello, World!" << std::endl;
+    std::cout << "Hello World from Hello World Library!" << std::endl;
 }
 }

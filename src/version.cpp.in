@@ -1,0 +1,8 @@
+#include "version.hpp"
+
+namespace hello_world {
+std::string Version::get_git_hash()
+{
+    return "@VERSION_GIT_HASH@";
+}
+}
