@@ -1,13 +1,20 @@
 pipeline {
   agent any
+
   stages {
-    stage('build') {
-      steps {
-          cmakeBuild(
-            installation: 'InSearchPath',
-            buildDir: 'build_x86',
-            buildType: 'Unix Makefiles'
-          )
+      stage('configure') {
+        steps {
+          dir('build') {
+            sh 'cmake ../'
+          }
+        }
+      }
+      stage('build') {
+        steps {
+          dir('build') {
+            sh 'cmake --build .'
+          }
+        }
       }
     }
   }
