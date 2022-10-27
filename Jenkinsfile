@@ -1,5 +1,5 @@
 cmakeBuild
-      generator: 'Ninja',
+      generator: 'Unix Makefiles',
       buildDir: 'build',
       sourceDir: 'source',
       installation: 'InSearchPath'
