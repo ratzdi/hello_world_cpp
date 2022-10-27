@@ -4,7 +4,11 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                cmakeBuild buildDir: 'build', buildType: 'Unix Makefiles', installation: 'InSearchPath', steps: [[]]
+                cmakeBuild(
+                    buildDir: 'build',
+                    buildType: 'Unix Makefiles',
+                    installation: 'InSearchPath',
+                    steps: [[]]
             }
         }
     }
