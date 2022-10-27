@@ -9,6 +9,7 @@ pipeline {
                     buildType: 'Unix Makefiles',
                     installation: 'InSearchPath',
                     steps: [[]]
+                )
             }
         }
     }
