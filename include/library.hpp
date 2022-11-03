@@ -13,6 +13,8 @@ public:
     virtual ~HelloWorld() = default;
 
     void print_hello() const;
+
+    virtual  std::string say_hello() const noexcept;
 };
 
 }
