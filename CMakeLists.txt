@@ -3,7 +3,6 @@ project(hello_world_cpp VERSION 0.1.0 DESCRIPTION "The Hello World C++ library")
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
-enable_testing()
 
 include(GNUInstallDirs)
 include(version.cmake)
@@ -55,5 +54,3 @@ install(EXPORT ${PROJECT_NAME}
         NAMESPACE ${PROJECT_NAME}::
         FILE ${PROJECT_NAME}Config.cmake
         )
-
-add_subdirectory(./test)
