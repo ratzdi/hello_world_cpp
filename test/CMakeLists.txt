@@ -2,7 +2,7 @@ project(test_hello_world_cpp)
 include(GoogleTest)
 
 find_package(GTest REQUIRED)
-find_package(hello_world_cpp REQUIRED)
+find_package(hello_world_cpp)
 
 if(CMAKE_COMPILER_IS_GNUCXX)
     set(CMAKE_CXX_FLAGS "--coverage")
